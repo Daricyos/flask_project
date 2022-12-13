@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="post", action="/add_anime">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name Anime</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input type="text" class="form-control" name="description">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name Anime</label>
+            <input type="float" class="form-control" name="rating">
+        </div>
+          <button type="submit" class="btn btn-primary">Add Anime</button>
+    </form>
+{% endblock %}
